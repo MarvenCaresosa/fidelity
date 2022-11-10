@@ -1,0 +1,70 @@
+package com.gwapoko.example;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Welcome to MarvenFoodMart.com");
+        System.out.println();
+
+        //Creating hotel menu program in java
+        while(true){
+            System.out.println("To order Food, Enter 1"); //Food
+            System.out.println("To order Snack, Enter 2"); // Snacks
+            System.out.println("To order Beverage, Enter 3");   // Beverages
+            System.out.println("To Exit, Enter 9");
+
+            System.out.println();
+            System.out.println("Enter your choice::");
+            int choice = scan.nextInt();
+
+            switch(choice){
+                case 1: System.out.println("Welcome to American Food Court");
+                    food();
+                    break;
+                case 2: System.out.println("Welcome to Filipino Snacks");
+                    snacks();
+                    break;
+                case 3: System.out.println("Welcome to Philippine Beverages");
+                    beverages();
+                    break;
+
+                case 9: System.out.println("Thanks for ordering from our App. Visit again");
+                    System.exit(0);
+                    break;
+                default: System.out.println("Incorrect input!!! Please re-enter choice from our menu");
+            }
+        }
+
+    }
+
+    public static void food(){
+        System.out.println("You get:");
+        System.out.println("Chicken : 2 Pieces: Price: 20 Pesos");
+        System.out.println("Ramen : 1 Pieces: Price: 80 Pesos");
+        System.out.println("Hamburgers : 2 Pieces: Price: 100 Pesos");
+
+    }
+
+    public static void snacks(){
+        System.out.println("You get:");
+        System.out.println("Crispy Patata : 2 Pieces: Price: 30 Pesos");
+        System.out.println("Korniks ni Mang Juan : 4 Pieces: Price: 30 Pesos");
+        System.out.println("Goodie~Goodie : 4 Pieces: Price: 40 Pesos");
+    }
+
+    public static void beverages(){
+        System.out.println("You get:");
+        System.out.println("Kulafu : 5 Pieces: Price: 90 Pesos");
+        System.out.println("Tanduay : 4 Pieces: Price: 95 Pesos");
+        System.out.println("Emperador : 4 Pieces: Price: 100 Pesos");
+
+    }
+
+
+
+    }
+
